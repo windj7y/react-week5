@@ -29,11 +29,11 @@ const Products = () => {
           products && products.length > 0 ? (
             products.map((product) => (
               <li className="col-md-6 col-lg-3" key={ product.id }>
-                <div class="card">
-                  <img src={ product.imageUrl } class="card-img-top" alt="主圖" />
-                  <div class="card-body">
-                    <h3 class="fs-5 fw-bold card-title">{ product.title }</h3>
-                    <p class="card-text mb-2">{ product.description }</p>
+                <div className="card">
+                  <img src={ product.imageUrl } className="card-img-top" alt="主圖" />
+                  <div className="card-body">
+                    <h3 className="fs-5 fw-bold card-title">{ product.title }</h3>
+                    <p className="card-text mb-2">{ product.description }</p>
                     <div className="mb-2">
                       <span className="text-danger me-2">${ product.price }</span>
                       <del className="">${ product.origin_price }</del>
